@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>小明</word>
+            <lemma>小明</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NR</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>在</word>
+            <lemma>在</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>P</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>哈尔滨</word>
+            <lemma>哈尔滨</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NR</POS>
+            <NER>GPE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>工业</word>
+            <lemma>工业</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>大学</word>
+            <lemma>大学</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>学习</word>
+            <lemma>学习</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VV</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>。</word>
+            <lemma>。</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>PU</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (IP (NP (NR 小明)) (VP (PP (P 在) (NP (NP (NR 哈尔滨)) (NP (NN 工业) (NN 大学)))) (VP (VV 学习))) (PU 。))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">学习</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">学习</governor>
+            <dependent idx="1">小明</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">大学</governor>
+            <dependent idx="2">在</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="3">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="4">工业</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">学习</governor>
+            <dependent idx="5">大学</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">学习</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">学习</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">学习</governor>
+            <dependent idx="1">小明</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">大学</governor>
+            <dependent idx="2">在</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="3">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="4">工业</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">学习</governor>
+            <dependent idx="5">大学</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">学习</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">学习</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">学习</governor>
+            <dependent idx="1">小明</dependent>
+          </dep>
+          <dep type="case">
+            <governor idx="5">大学</governor>
+            <dependent idx="2">在</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="3">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">大学</governor>
+            <dependent idx="4">工业</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">学习</governor>
+            <dependent idx="5">大学</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="6">学习</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>哈尔滨</word>
+            <lemma>哈尔滨</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NR</POS>
+            <NER>ORG</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>工业</word>
+            <lemma>工业</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORG</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>大学</word>
+            <lemma>大学</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORG</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>坐</word>
+            <lemma>坐</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VV</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>落于</word>
+            <lemma>落于</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VV</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>哈尔滨</word>
+            <lemma>哈尔滨</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NR</POS>
+            <NER>GPE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>。</word>
+            <lemma>。</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>PU</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (IP (NP (NP (NR 哈尔滨)) (NP (NN 工业) (NN 大学))) (VP (VV 坐) (VP (VV 落于) (NP (NR 哈尔滨)))) (PU 。))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">落于</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="1">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="2">工业</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">落于</governor>
+            <dependent idx="3">大学</dependent>
+          </dep>
+          <dep type="mmod">
+            <governor idx="5">落于</governor>
+            <dependent idx="4">坐</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">落于</governor>
+            <dependent idx="6">哈尔滨</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">落于</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">落于</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="1">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="2">工业</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">落于</governor>
+            <dependent idx="3">大学</dependent>
+          </dep>
+          <dep type="mmod">
+            <governor idx="5">落于</governor>
+            <dependent idx="4">坐</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">落于</governor>
+            <dependent idx="6">哈尔滨</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">落于</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">落于</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="1">哈尔滨</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">大学</governor>
+            <dependent idx="2">工业</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">落于</governor>
+            <dependent idx="3">大学</dependent>
+          </dep>
+          <dep type="mmod">
+            <governor idx="5">落于</governor>
+            <dependent idx="4">坐</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">落于</governor>
+            <dependent idx="6">哈尔滨</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="5">落于</governor>
+            <dependent idx="7">。</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>它</word>
+            <lemma>它</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>PN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="2">
+            <word>是</word>
+            <lemma>是</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="3">
+            <word>中华</word>
+            <lemma>中华</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NR</POS>
+            <NER>GPE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="4">
+            <word>人民</word>
+            <lemma>人民</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>GPE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="5">
+            <word>共和国</word>
+            <lemma>共和国</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>GPE</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="6">
+            <word>工业</word>
+            <lemma>工业</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="7">
+            <word>和</word>
+            <lemma>和</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="8">
+            <word>信息化</word>
+            <lemma>信息化</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="9">
+            <word>部</word>
+            <lemma>部</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="10">
+            <word>直属</word>
+            <lemma>直属</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="11">
+            <word>重点</word>
+            <lemma>重点</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="12">
+            <word>大学</word>
+            <lemma>大学</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+          <token id="13">
+            <word>。</word>
+            <lemma>。</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PU</POS>
+            <NER>O</NER>
+            <Speaker>PER0</Speaker>
+          </token>
+        </tokens>
+        <parse>(ROOT (IP (NP (PN 它)) (VP (VC 是) (NP (NP (NP (NR 中华)) (NP (NN 人民) (NN 共和国) (NN 工业) (CC 和) (NN 信息化) (NN 部))) (ADJP (JJ 直属)) (NP (NN 重点) (NN 大学)))) (PU 。))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">大学</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">大学</governor>
+            <dependent idx="1">它</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">大学</governor>
+            <dependent idx="2">是</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="3">中华</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="4">人民</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="5">共和国</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">部</governor>
+            <dependent idx="6">工业</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">部</governor>
+            <dependent idx="7">和</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="8">信息化</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="9">部</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">大学</governor>
+            <dependent idx="10">直属</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="11">重点</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="12">大学</governor>
+            <dependent idx="13">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">大学</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">大学</governor>
+            <dependent idx="1">它</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">大学</governor>
+            <dependent idx="2">是</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="3">中华</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="4">人民</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="5">共和国</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">部</governor>
+            <dependent idx="6">工业</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">部</governor>
+            <dependent idx="7">和</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="8">信息化</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="9">部</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">大学</governor>
+            <dependent idx="10">直属</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="11">重点</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="12">大学</governor>
+            <dependent idx="13">。</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">大学</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">大学</governor>
+            <dependent idx="1">它</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">大学</governor>
+            <dependent idx="2">是</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="3">中华</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="4">人民</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="5">共和国</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">部</governor>
+            <dependent idx="6">工业</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">部</governor>
+            <dependent idx="7">和</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">部</governor>
+            <dependent idx="8">信息化</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="9">部</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">大学</governor>
+            <dependent idx="10">直属</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">大学</governor>
+            <dependent idx="11">重点</dependent>
+          </dep>
+          <dep type="punct">
+            <governor idx="12">大学</governor>
+            <dependent idx="13">。</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>3</start>
+          <end>4</end>
+          <head>3</head>
+          <text>哈尔滨</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>哈尔滨</text>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>6</start>
+          <end>7</end>
+          <head>6</head>
+          <text>哈尔滨</text>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>4</end>
+          <head>3</head>
+          <text>哈尔滨 工业 大学</text>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>3</start>
+          <end>6</end>
+          <head>5</head>
+          <text>哈尔滨 工业 大学</text>
+        </mention>
+        <mention>
+          <sentence>3</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+          <text>它</text>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>
