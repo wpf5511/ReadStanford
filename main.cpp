@@ -83,6 +83,7 @@ void extractNEP(std::vector<Token> tokens,std::map<int,NEPMAP>& senNEP){
 
 class Phrase;
 //Phrase add attribute string NEtype  bool isNE
+//phrase and ne in the same sentence
 void addNEtoPhrase(NEPMAP neps,std::map<int,Phrase>&phrases){
     for(auto it = phrases.begin();it!=phrases.end();it++){
         if(it->second.isArgument== false){
@@ -102,6 +103,7 @@ void addNEtoPhrase(NEPMAP neps,std::map<int,Phrase>&phrases){
                 std::wstring wneHead = s2ws(neHeadstring);
                 if(std::fabs(phead-neHead)<=3&&wphead.back()==wneHead.back()){
                     it->second.entityType = it2->second.entityType;
+                    it->second.isNE = true;
                     neps.erase(it2);
                     break;
                 }else{
@@ -117,10 +119,64 @@ void addNEtoPhrase(NEPMAP neps,std::map<int,Phrase>&phrases){
                 }
             }
             if(maxlenlcs>0){
+                it->second.entityType = maxlenitor->second.entityType;
+                it->second.isNE = true;
                 neps.erase(maxlenitor);
             }
         }
     }
+}
+
+addCorefertoPhrase(int Docid,std::map<SentenceIdentify,SentenceGraph> sentence_map,
+                   std::map<PhraseIdentify,Phrase> &phrase_map,std::vector<Corefer> corefers){
+    for(int i=0;i<corefers.size();i++){
+        auto corefer = corefers[i];
+        SentenceIdentify  sIden(Docid,corefer.sentenceid);
+        SentenceGraph  sen = sentence_map.at(sIden);
+        std::vector<int>phrases = sen.Phrases;
+
+        int maxlenlcs=0; PhraseIdentify corefer_pIden;
+
+        for(auto  itp=phrases.begin();itp!=phrases.end();itp++){
+
+            PhraseIdentify pIden(Docid,corefer.sentenceid,*itp);
+
+            auto sen_phrase = phrase_map.at(pIden);
+
+            if(sen_phrase.isArgument== false){
+                continue;
+            }
+            else{
+                int  phead = sen_phrase.head;
+
+                int coreHead = corefer.headIndex;
+
+                if(std::fabs(phead-coreHead)<=3){
+                    std::string pContent = sen_phrase.content;
+                    std::string crContent = corefer.text;
+
+                    int commonlen = lcs(s2ws(pContent),s2ws(crContent));
+
+                    if(commonlen>maxlenlcs){
+                        maxlenlcs = commonlen;
+                        corefer_pIden = pIden;
+                    }
+                }
+            }
+        }
+        PhraseIdentity  referedIden;
+        if(maxlenlcs>0){
+            if(corefer.isRepresentative){
+                referedIden = corefer_pIden;
+                auto &corefer_phrase = phrase_map.at(referedIden);
+                corefer_phrase.isRepresent = true;
+            }else{
+                auto &corefer_phrase = phrase_map.at(corefer_pIden);
+                corefer_phrase.coreferPhrase = referedIden;
+            }
+        }
+    }
+
 }
 
 

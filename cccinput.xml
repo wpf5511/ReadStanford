@@ -606,7 +606,7 @@
     </sentences>
     <coreference>
       <coreference>
-        <mention representative="true">
+        <  representative="true">
           <sentence>1</sentence>
           <start>3</start>
           <end>4</end>
